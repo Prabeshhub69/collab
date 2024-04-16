@@ -1,0 +1,175 @@
+/* Reset and basic styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+/*header*/
+  header {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px 40px; /* Increased padding */
+}
+
+header h1 {
+  margin: 0;
+  text-align: center;
+  padding: 20px 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  display: inline;
+}
+/*user dropdown menue*/
+.user-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.user-dropdown img {
+  height: 30px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.user-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+h1{      
+  text-align: center;
+}
+/* Reset default styles for better cross-browser consistency */
+input[type="date"] {
+  width: 180px; /* Adjust the width as needed */
+  position: relative;
+  padding: 8px; /* Adjust padding for a more compact look */
+  line-height: 1.5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  appearance: none; /* Remove default appearance */
+  -webkit-appearance: none; /* Remove default appearance for WebKit-based browsers */
+}
+
+/* Add custom arrow icon */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url("path/to/calendar-icon.svg"); /* Replace with your calendar icon */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+/* Style the dropdown calendar */
+::-webkit-datetime-edit-fields-wrapper {
+  background-color: #fff;
+  padding: 4px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-datetime-edit-text {
+  padding: 4px 8px; /* Adjust padding as needed */
+  border-radius: 4px;
+}
+
+::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-year-field {
+  padding: 4px 8px; /* Adjust padding as needed */
+  border-radius: 4px;
+}
+
+
+/* Main content styles */
+main {
+  padding: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input,
+.search-bar button {
+  margin-right: 10px;
+  padding: 5px 10px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.image-container h2{
+  text-align: center;
+}
+.image-container h4{
+  text-align: center;
+}
+
+.image-container {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer styles */
+footer {
+  padding: 20px;
+  background-color: #f2f2f2;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.footer-icons {
+  margin-top: 10px;
+}
+
+.footer-icons img {
+  height: 50px;
+  margin: 0 5px
+}
