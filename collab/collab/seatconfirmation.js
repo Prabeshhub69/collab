@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const selectedCount = document.querySelector('.selected-count');
     const bookedCount = document.querySelector('.booked-count');
   
-    let available = 29;
+    let available = 30;
     let selected = 0;
     let booked = 0;
   
