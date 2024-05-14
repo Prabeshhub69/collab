@@ -1,0 +1,192 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: url('background.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  font-size: 24px;
+  padding: 20px 40px;
+}
+
+.logo img {
+  max-width: 100px; /* Adjust size as needed */
+}
+
+.dp.profile img {
+  max-width: 40px; /* Adjust size as needed */
+}
+
+.topbuttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.about-us,
+.help,
+.search {
+  background-color: #416fb4;
+  border-radius: 30px;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  font-size: 19px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.topbuttons a {
+  margin: 0;
+}
+
+.dp.profile {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  min-width: 240px;
+  box-shadow: 0px 8px 16px 0px #606da033;
+  z-index: 1;
+  top: 100%;
+  right: 0;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.show-dropdown {
+  display: block !important;
+}
+
+.topbuttons button:hover {
+  background-color: #b0bbeb;
+}
+
+h1 {
+  text-align: left;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #8ca1c1;
+  padding-left: 20px;
+}
+
+input[type="date"] {
+  width: 180px; /* Adjust the width as needed */
+  position: relative;
+  padding: 8px; /* Adjust padding for a more compact look */
+  line-height: 1.5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  appearance: none; /* Remove default appearance */
+  -webkit-appearance: none; /* Remove default appearance for WebKit-based browsers */
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url("path/to/calendar-icon.svg"); /* calender icon  */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+::-webkit-datetime-edit-fields-wrapper {
+  background-color: #fff;
+  padding: 4px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-datetime-edit-text {
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-year-field {
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input,
+.search-bar button {
+  margin-right: 10px;
+  padding: 5px 10px;
+}
+
+footer {
+  padding: 12px;
+  background-color: #416fb4;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  margin-top: auto;
+}
+
+.footer-icons {
+  margin-top: 10px;
+}
+
+.footer-icons img {
+  height: 50px;
+  margin: 0 5px;
+}
